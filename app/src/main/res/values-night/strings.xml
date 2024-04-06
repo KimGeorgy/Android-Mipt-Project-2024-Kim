@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nutrition</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="left_button">left_button</string>
+    <string name="right_button">right_button</string>
+    <string name="enter_a_what_you_have_eaten_like_coffee_and_croissant_or_chicken_enchilada_to_see_how_it_works_we_have_accurate_data_tens_of_thousands_of_foods_including_international_dishes">Enter a what you have eaten, like \"coffee and croissant\" or \"chicken enchilada\" to see how it works. We have accurate data tens of thousands of foods, including international dishes.</string>
+    <string name="search">Search</string>
+    <string name="type_one_or_more_keywords">Type one or more keywords</string>
+    <string name="enter_an_ingredient_list_list_for_what_you_are_cooking_like_quot_1_cup_rice_10_oz_chickpeas_quot_etc_enter_each_ingredient_on_a_new_line">Enter an ingredient list list for what you are cooking, like\"1 cup rice, 10 oz chickpeas\", etc. Enter each ingredient on a new line.</string>
+    <string name="_1_cup_rice_n_10_oz_chickpeas">1 cup rice, \n 10 oz chickpeas</string>
+    <string name="type_your_ingredients">Type your ingredients</string>
+    <string name="nutrition_analysis">Nutrition analysis</string>
+    <string name="analyze">Analyze</string>
+    <string name="nutrition_facts">Nutrition facts</string>
+</resources>
