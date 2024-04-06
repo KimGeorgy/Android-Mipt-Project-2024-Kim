@@ -5,14 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity(), ClickListener {
-    var screenState: Int = MAIN_SMALL_A // TODO нужно ли вообще если фрагменты сохраняются
     lateinit var prefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        screenState = savedInstanceState?.getInt(SCREEN_STATE_KEY) ?: MAIN_SMALL_A
         prefs = getSharedPreferences("com.example.project", MODE_PRIVATE);
 
         if (savedInstanceState == null) {
@@ -23,18 +21,8 @@ class MainActivity : AppCompatActivity(), ClickListener {
                     .commitNow()
                 prefs.edit().putBoolean("firstlaunch", false).apply()
 
-            } else when (screenState) {
-                MAIN_A -> supportFragmentManager.beginTransaction()
-                    .replace(R.id.main_fragment_container, MainA())
-                    .commitNow()
-
-                MAIN_B -> supportFragmentManager.beginTransaction()
-                    .replace(R.id.main_fragment_container, MainB())
-                    .commitNow()
-
-                MAIN_SMALL_A -> goSmallA()
-
-                MAIN_SMALL_B -> goSmallB()
+            } else {
+                goSmallA()
             }
         }
     }
@@ -71,11 +59,6 @@ class MainActivity : AppCompatActivity(), ClickListener {
             .addToBackStack(null)
             .commit()
         // TODO keywords
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putInt(SCREEN_STATE_KEY, screenState)
     }
 
     companion object {

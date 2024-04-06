@@ -16,42 +16,39 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal|bottom">
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:text="@string/enter_a_what_you_have_eaten_like_coffee_and_croissant_or_chicken_enchilada_to_see_how_it_works_we_have_accurate_data_tens_of_thousands_of_foods_including_international_dishes"/>
+            android:text="@string/enter_a_what_you_have_eaten_like_coffee_and_croissant_or_chicken_enchilada_to_see_how_it_works_we_have_accurate_data_tens_of_thousands_of_foods_including_international_dishes" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:hint="@string/type_one_or_more_keywords"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_gravity="center"
+            android:hint="@string/type_one_or_more_keywords">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                />
+                android:text="" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/button_search_recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/search"
-            android:id="@+id/button_search_recipe"
+            android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:layout_gravity="center_horizontal"
-            />
+            android:text="@string/search" />
     </LinearLayout>
-
 
 
 </FrameLayout>
