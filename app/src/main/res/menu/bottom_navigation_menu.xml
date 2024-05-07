@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/left"
+        android:enabled="true"
+        android:icon="@drawable/baseline_arrow_circle_left_24"
+        android:title="Recipes"/>
+
+    <item
+        android:id="@+id/right"
+        android:enabled="true"
+        android:icon="@drawable/baseline_arrow_circle_right_24"
+        android:title="Nutrition"/>
+</menu>
